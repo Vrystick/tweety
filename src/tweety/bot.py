@@ -70,7 +70,7 @@ class Twitter:
         else:
             return 0
 
-    def get_user_info(self, banner_extensions=False, image_extensions=False):
+    def get_user_info(self, banner_extensions, image_extensions):
         if self.profile_url:
             json_ = self.__verify_user()
             if json_ == 0:
